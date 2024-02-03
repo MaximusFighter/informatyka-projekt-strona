@@ -1,0 +1,16 @@
+* {
+  font-family: Lato, Arial;
+}
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background-color: #faf7ef;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+

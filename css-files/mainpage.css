@@ -1,0 +1,24 @@
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.text-link {
+  text-decoration: underline;
+  transition: color 0.15s;
+}
+.text-link:hover {
+  color: rgb(134, 134, 134);
+}
+.logo-div {
+  width: 85px;
+  height: 85px;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}

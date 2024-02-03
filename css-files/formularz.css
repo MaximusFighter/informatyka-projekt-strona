@@ -1,0 +1,53 @@
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px;
+}
+input {
+  text-align: center;
+  width: 200px;
+}
+#klasa {
+  width: 150px;
+}
+#email {
+  width: 250px;
+}
+
+label {
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+input[type='number']::-webkit-inner-spin-button, 
+input[type='number']::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0;
+}
+.koncz {
+  width: 125px;
+  margin: 3px 0;
+  background-color: #3a5a40;
+  color: #faf7ef;
+  border: none;
+  padding: 10px 5px;
+  border-radius: 6px;
+  transition: background-color 0.15s;
+}
+.koncz:hover {
+  background-color: #588157;
+}
+.koncz:active {
+  background-color: #7aa37a;
+}

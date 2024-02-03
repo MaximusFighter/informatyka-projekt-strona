@@ -1,0 +1,43 @@
+.topbar {
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  height: 100px;
+  display: flex;
+  background-color: #a3b18a;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 2;
+}
+.sections {
+  width: 180px;
+  height: 60px;
+  background-color: #3a5a40;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: background-color 0.15s;
+  cursor: pointer;
+  color: #faf7ef;
+}
+.sections:hover {
+  background-color: #588157;
+}
+.sections:active {
+  background-color: #7aa37a;
+}
+.aktualna {
+  background-color: #809684;
+}
+
+
+
+
+
+
+
+
+

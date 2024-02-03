@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konkurs wiedzy</title>
+    <!-- pliki css -->
+    <link rel="stylesheet" href="css-files/general.css">
+    <link rel="stylesheet" href="css-files/topbar.css">
+    <link rel="stylesheet" href="css-files/quiz.css">
+    <!-- czcionki -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <script src="js-files/quiz3.js"></script>
+    <div class="topbar">
+      <a href="index.html"><div class="sections">STRONA GŁÓWNA</div></a>
+      <a href="formularz.html"><div class="sections">FORMULARZ</div></a>
+      <a href="quiz.html"><div class="sections aktualna">QUIZ KONKURSOWY</div></a>
+      <a href="krzyzowki.html"><div class="sections">KRZYŻÓWKI</div></a>
+      <a href="rebusy.html"><div class="sections">REBUSY</div></a>
+      <a href="nagrody.html"><div class="sections">NAGRODY</div></a>
+    </div>
+    <main>
+      <a href="quiz2.html"><div class="strzalki strzalka-lew">
+        <img class="str-img" src="zdjecia/strzalka-w-lewo.png">
+      </div></a>
+      <a href="quiz4.html"><div class="strzalki strzalka-praw">
+        <img class="str-img" src="zdjecia/strzalka-w-prawo.png">
+      </div></a>
+      <div id="quiz-container">
+        <div class="question">1. Do wykonania kopii danych na dysk USB w systemie Linux stosuje się polecenie </div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 1)">A. mv</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 1)">B. cp</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 1)">C. su</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 1)">D. su</div>
+        
+        <div class="question">2. Urządzeniem, które służy do wycinania kształtów oraz grawerowania między innymi w materiałach drewnianych, szklanych i metalowych, jest ploter</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 2)">A. bębnowy</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 2)">B. olwentowy</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 2)">C. laserowy</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 2)">D. tnący</div>
+        
+        <div class="question">3. Zgodnie z normą PN-EN 50174 maksymalna długość przebiegu kabla poziomego kategorii 6 pomiędzy punktem abonenckim a punktem dystrybucyjnym w panelu krosowym wynosi </div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 3)">A. 0 m</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 3)">B. 10 m</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 3)">C. 00 m</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 3)">D. 50 m</div>
+        
+        <div class="question">4. Zdalne uwierzytelnianie użytkowników w sieciach bezprzewodowych może odbywać się za pomocą usługi </div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 4)">A. HTTPS</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 4)">B. IMAP</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 4)">C. NNTP</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 4)">D. RADIUS</div>
+        
+        <div class="question">5. Tusz żelowy jest stosowany w drukarkach – sublimacyjnych</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 5)">A. sublimacyjnych</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 5)">B. termotransferowych</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 5)">C. igłowych</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 5)">D. fiskalnych</div>
+        
+        <div class="question">6. Jaką nazwę nosi identyfikator, który musi być identyczny, aby urządzenia sieciowe mogły pracować w danej sieci bezprzewodowej?</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 6)">A. IP</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 6)">B. MAC</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 6)">C. SSID</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 6)">D. URL</div>
+        
+        <div class="question">7. ACPI jest skrótem oznaczającym</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 7)">A. zaawansowany interfejs zarządzania konfiguracją i energią</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 7)">B. zestaw ścieżek łączących jednocześnie kilka komponentów z możliwością komunikacji</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 7)">C. program umożliwiający odnalezienie rekordu rozruchowego systemu</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 7)">D. test poprawności działania podstawowych podzespołów</div>
+        
+        <div class="question">8. Ustawa z dnia 14 grudnia 2012 r. o odpadach nakazuje</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 8)">A. neutralizację odpadów w dowolny sposób w jak najkrótszym czasie</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 8)">B. spalenie odpadów w jak najwyższej temperaturze</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 8)">C. składowanie odpadów maksymalnie przez 1 rok</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 8)">D. poddanie odpadów w pierwszej kolejności odzyskowi</div>
+        
+        <div class="question">9. Protokół pocztowy, za pomocą którego możemy odbierać pocztę z serwera, to</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 9)">A. FTP</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 9)">B. POP3</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 9)">C. HTTP</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 9)">D. SMTP</div>
+        
+        <div class="question">10. Liczba 45(H) zapisana w systemie ósemkowym ma postać</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 10)">A. 02</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 10)">B. 08</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 10)">C. 05</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 10)">D. 10</div>
+        
+        <button id="check-btn" onclick="showResult()">Sprawdź odpowiedzi</button>
+        <button id="reset-btn" onclick="resetQuiz()">Resetuj</button>
+        <div id="result"></div>
+      </div>
+    </main>
+  </body>
+</html>

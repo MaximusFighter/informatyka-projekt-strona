@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konkurs wiedzy</title>
+    <!-- pliki css -->
+    <link rel="stylesheet" href="css-files/general.css">
+    <link rel="stylesheet" href="css-files/topbar.css">
+    <link rel="stylesheet" href="css-files/quiz.css">
+    <!-- czcionki -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <script src="js-files/quiz.js"></script>
+    <div class="topbar">
+      <a href="index.html"><div class="sections">STRONA GŁÓWNA</div></a>
+      <a href="formularz.html"><div class="sections">FORMULARZ</div></a>
+      <a href="quiz.html"><div class="sections aktualna">QUIZ KONKURSOWY</div></a>
+      <a href="krzyzowki.html"><div class="sections">KRZYŻÓWKI</div></a>
+      <a href="rebusy.html"><div class="sections">REBUSY</div></a>
+      <a href="nagrody.html"><div class="sections">NAGRODY</div></a>
+    </div>
+    <main>
+      <a href="quiz2.html"><div class="strzalki strzalka-praw">
+        <img class="str-img" src="zdjecia/strzalka-w-prawo.png">
+      </div></a>
+      <div id="quiz-container">
+        <div class="question">1. Monitor CRT łączy się z kartą graficzną za pomocą złącza</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 1)">A. D-USB</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 1)">B. D-SUB</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 1)">C.  BNC</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 1)">D.  PCMCIA</div>
+
+        <div class="question">2. Na wydrukach drukarki laserowej można zaobserwować podłużne pasma oraz powtarzające się artefakty. Możliwą przyczyną złej jakości wydruku jest usterka</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 2)">A. głowicy drukującej</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 2)">B. układu zliczającego</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 2)">C. bębna światłoczułego</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 2)">D. taśmy barwiącej.</div>
+
+        <div class="question">3. Który protokół działa w warstwie aplikacji modelu ISO/OSI umożliwiając wymianę informacji kontrolnych pomiędzy urządzeniami sieciowymi?</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 3)">A. DNS</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 3)">B. SNMP</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 3)">C. POP</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 3)">D. SMTP</div>
+
+        <div class="question">4. Ile podwójnych gniazd RJ45 powinno być zamontowanych w pomieszczeniu o wymiarach 8 x 5 m, aby były spełnione zalecenia normy PN-EN 50173?</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 4)">A. 0 gniazd</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 4)">B.  gniazd</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 4)">C.  gniazd</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 4)">D.  gniazda</div>
+
+        <div class="question">5. Zgodnie z normą TIA/EIA-568-B.1 kabel UTP 5e z przeplotem jest tworzony poprzez zamianę ułożenia we wtyczce 8P8C następujących par przewodów (odpowiednio według kolorów):</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 5)">A. biało-zielony i zielony z biało-niebieskim i niebieskim</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 5)">B. biało-pomarańczowy i pomarańczowy z biało-brązowym i brązowym</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 5)">C. biało-pomarańczowy i pomarańczowy z biało-zielonym i zielonym</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 5)">D. biało-zielony i zielony z biało-brązowym i brązowym</div>
+
+        <div class="question">6. Administrator zauważył, że w sieci LAN występuje duża liczba kolizji. Które urządzenie powinien zainstalować, aby podzielić sieć lokalną na mniejszy domeny kolizji?</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 6)">A. Przełącznik</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 6)">B. Modem</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 6)">C. Router</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 6)">D. Koncentrator</div>
+
+        <div class="question">7. Typowym objawem wskazującym na zbliżającą się awarię dysku twardego jest pojawienie się</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 7)">A. komunikatu CMOS checksum error</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 7)">B. komunikatu Diskette drive A error</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 7)">C. błędów zapisu i odczytu dysku</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 7)">D. trzech krótkich sygnałów dźwiękowych</div>
+
+        <div class="question">8. CommView i WireShark to programy stosowane do</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 8)">A. zabezpieczenia transmisji danych w sieci</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 8)">B. sprawdzania zasięgu sieci bezprzewodowej</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 8)">C. analizowania pakietów transmitowanych w sieci</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 8)">D. określania wielkości tłumienia w torze transmisyjnym</div>
+
+        <div class="question">9. Które określenie dotyczące konta użytkownika Active Directory w systemie Windows jest prawdziwe?</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 9)">A. Nazwa logowania użytkownika może mieć długość większą niż 100 bajtów</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 9)">B. Nazwa logowanie użytkownika nie może mieć długości większej niż 100 bajtów</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 9)">C. Nazwa logowania użytkownika musi mieć mniej niż 21 znaków</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 9)">D. Nazwa logowania użytkownika musi mieć mniej niż 20 znaków</div>
+
+        <div class="question">10. Jaki protokół służy do translacji pomiędzy publicznymi i prywatnymi adresami IP?</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 10)">A. RARP</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 10)">B. NAT</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 10)">C. SNMP</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 10)">D. ARP</div>
+        
+        <button id="check-btn" onclick="showResult()">Sprawdź odpowiedzi</button>
+        <button id="reset-btn" onclick="resetQuiz()">Resetuj</button>
+        <div id="result"></div>
+      </div>
+    </main>
+  </body>
+</html>

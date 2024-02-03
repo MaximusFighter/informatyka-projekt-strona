@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konkurs wiedzy</title>
+    <!-- pliki css -->
+    <link rel="stylesheet" href="css-files/general.css">
+    <link rel="stylesheet" href="css-files/topbar.css">
+    <link rel="stylesheet" href="css-files/quiz.css">
+    <!-- czcionki -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <script src="js-files/quiz2.js"></script>
+    <div class="topbar">
+      <a href="index.html"><div class="sections">STRONA GŁÓWNA</div></a>
+      <a href="formularz.html"><div class="sections">FORMULARZ</div></a>
+      <a href="quiz.html"><div class="sections aktualna">QUIZ KONKURSOWY</div></a>
+      <a href="krzyzowki.html"><div class="sections">KRZYŻÓWKI</div></a>
+      <a href="rebusy.html"><div class="sections">REBUSY</div></a>
+      <a href="nagrody.html"><div class="sections">NAGRODY</div></a>
+    </div>
+    <main>
+      <a href="quiz.html"><div class="strzalki strzalka-lew">
+        <img class="str-img" src="zdjecia/strzalka-w-lewo.png">
+      </div></a>
+      <a href="quiz3.html"><div class="strzalki strzalka-praw">
+        <img class="str-img" src="zdjecia/strzalka-w-prawo.png">
+      </div></a>
+      <div id="quiz-container">
+        <div class="question">1. Drugi monitor CRT podłączony do zestawu komputerowego służy do</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 1)">A. wyprowadzania informacji</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 1)">B. przetwarzania danych</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 1)">C. kalibracji danych</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 1)">D. przechowywania informacji</div>
+        
+        <div class="question">2. Najczęściej stosowany kodek mowy podczas konfiguracji bramki VoIP to</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 2)">A. G.71</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 2)">B. AC</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 2)">C. A.51</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 2)">D. GSM</div>
+        
+        <div class="question">3. Aby zwiększyć wydajność komputera w grach, karta graficzna Sapphire Radeon R9 FURY OC, 4GB HBM (4096 Bit), HDMI, DVI, 3xDP została wyposażona w technologię</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 3)">A. Stream</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 3)">B. CUDA</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 3)">C. CrossFireX</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 3)">D. SLI</div>
+        
+        <div class="question">4. Aby sprawdzić adres fizyczny karty sieciowej, w wierszu poleceń systemu operacyjnego Microsoft Windows należy wpisać polecenie</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 4)">A. ipconfig /all</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 4)">B. show mac</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 4)">C. get mac</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 4)">D. ifconfig -a</div>
+        
+        <div class="question">5. Który z protokołów jest protokołem synchronizacji czasu?</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 5)">A. FTP</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 5)">B. HTTP</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 5)">C. NNTP</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 5)">D. NTP</div>
+        
+        <div class="question">6. W czasie przeprowadzania procedury POST na ekranie pojawia się komunikat "CMOS Battery State Low". Co w takiej sytuacji należy zrobić, aby komunikat nie pojawił się w przyszłości</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 6)">A. Podłączyć zasilanie sieciowe</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 6)">B. Ustawić poprawnie opcje konfiguracyjne CMOS dotyczące zasilania</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 6)">C. Wymienić baterię na płycie głównej komputera</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 6)">D. Wymienić akumulatory laptopa na nowe</div>
+        
+        <div class="question">7. Powodem niekontrolowanego zapełnienia dysku może być</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 7)">A. zbyt małe jednostki alokacji plików</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 7)">B. wirus komputerowy</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 7)">C. częsta defragmentacja</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 7)">D. źle skonfigurowana pamięć wirtualna</div>
+        
+        <div class="question">8. W systemie Linux program fsck pozwala na</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 8)">A. zlokalizowanie i naprawę uszkodzonych sektorów na dysku twardym</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 8)">B. monitorowanie stanu procesora</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 8)">C. usuwanie błędnych wpisów w rejestrze systemowym</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 8)">D. testowanie wydajności karty sieciowej</div>
+        
+        <div class="question">9. Za pomocą którego polecenia systemu Linux możliwa jest zmiana domyślnej powłoki użytkownika egzamin na sh</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 9)">A. usermod -s /bin/sh egzamin</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 9)">B. groupmod /users/egzamin /bin/sh</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 9)">C. vi /etc/passwd -sh egzamin</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 9)">D. chmod egzamin /etc/shadow sh</div>
+        
+        <div class="question">10. Adres IP komputera wyrażony sekwencją 172.16.0.1 jest zapisany w systemie</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 10)">A. szesnastkowym</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 10)">B. dwójkowym</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 10)">C. dziesiętnym</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 10)">D. ósemkowym</div>
+        
+        <button id="check-btn" onclick="showResult()">Sprawdź odpowiedzi</button>
+        <button id="reset-btn" onclick="resetQuiz()">Resetuj</button>
+        <div id="result"></div>
+      </div>
+    </main>
+  </body>
+</html>

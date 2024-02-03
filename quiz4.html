@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konkurs wiedzy</title>
+    <!-- pliki css -->
+    <link rel="stylesheet" href="css-files/general.css">
+    <link rel="stylesheet" href="css-files/topbar.css">
+    <link rel="stylesheet" href="css-files/quiz.css">
+    <!-- czcionki -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <script src="js-files/quiz4.js"></script>
+    <div class="topbar">
+      <a href="index.html"><div class="sections">STRONA GŁÓWNA</div></a>
+      <a href="formularz.html"><div class="sections">FORMULARZ</div></a>
+      <a href="quiz.html"><div class="sections aktualna">QUIZ KONKURSOWY</div></a>
+      <a href="krzyzowki.html"><div class="sections">KRZYŻÓWKI</div></a>
+      <a href="rebusy.html"><div class="sections">REBUSY</div></a>
+      <a href="nagrody.html"><div class="sections">NAGRODY</div></a>
+    </div>
+    <main>
+      <a href="quiz3.html"><div class="strzalki strzalka-lew">
+        <img class="str-img" src="zdjecia/strzalka-w-lewo.png">
+      </div></a>
+      <div id="quiz-container">
+        <div class="question">1. Procesory CISC charakteryzują się</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 1)">A. niewielką liczbą trybów adresowania</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 1)">B. dużą liczbą rozkazów</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 1)">C. ograniczaną komunikacją pomiędzy pamięcią a procesorem</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 1)">D. prostą i szybką jednostką sterującą</div>
+        
+        <div class="question">2. Użytkownik drukarki samodzielnie i prawidłowo napełnił pojemnik z tonerem. Po jego zamontowaniu drukarka nie podejmuje próby drukowania. Przyczyną tej usterki może być</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 2)">A. zabrudzony wałek magnetyczny</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 2)">B. zła jakość wykorzystanego tonera do uzupełnienia pojemnika</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 2)">C. źle dobrany toner</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 2)">D. niewymieniony chip zliczający, znajdujący się na pojemniku z tonerem</div>
+        
+        <div class="question">3. Który standard specyfikacji IEEE 802.3 należy zastosować w środowisku, w którym występują zakłócenia elektromagnetyczne, jeśli odległość od punktu dystrybucyjnego do punktu abonenckiego wynosi 200 m?</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 3)">A. 00BaseFX</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 3)">B. 000BaseTX</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 3)">C. 0Base2</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 3)">D. 00BaseT</div>
+        
+        <div class="question">4. Poleceniem służącym do aktualizowania systemu operacyjnego Linux z bazami RPM jest</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 4)">A. upgrade</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 4)">B. zypper</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 4)">C. nm</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 4)">D. chmode</div>
+        
+        <div class="question">5. Które elementy systemu komputerowego podlegają utylizacji w wyspecjalizowanych zakładach przetwarzania z uwagi na zawartość niebezpiecznych substancji lub pierwiastków chemicznych?</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 5)">A. Radiatory</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 5)">B. Przewody</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 5)">C. Obudowy komputerów</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 5)">D. Tonery</div>
+        
+        <div class="question">6. Użytkownik chce tak zmodernizować komputer, aby działały na nim gry wymagające DirectX12. Jaki system operacyjny powinien zakupić do modernizowanego komputera, aby wspierał DX12?</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 6)">A. Windows 8</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 6)">B. Windows 8.1</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 6)">C. Windows 10</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 6)">D. Windows XP</div>
+        
+        <div class="question">7. Złącze szeregowe na płycie głównej, służące do podłączania kart rozszerzeń o różnej, w zależności od wariantu, liczbie pinów nosi nazwę</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 7)">A. PCI</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 7)">B. AGP</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 7)">C. ISA</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 7)">D. PCI Express</div>
+        
+        <div class="question">8. System S.M.A.R.T przeznaczony jest do monitorowania pracy i wykrywania błędów</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 8)">A. napędów płyt CD/DVD</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 8)">B. dysków twardych</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 8)">C. płyty głównej</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 8)">D. kart rozszerzeń</div>
+        
+        <div class="question">9. Przy uruchamianiu komputera pojawia się komunikat "CMOS checksum error press F1 to continue press DEL to setup". Wciśnięcie klawisza DEL spowoduje</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 9)">A. wejście do BIOS-u komputera</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 9)">B. usunięcie pliku setup</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 9)">C. skanowanie zawartości pamięci CMOS</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 9)">D. przejście do konfiguracji systemu Windows</div>
+        
+        <div class="question">10. Informacje o błędach działania systemu operacyjnego Linux można uzyskać za pomocą narzędzia</div>
+          <div class="answer" data-answer="A" onclick="selectAnswer(this, 'A', 10)">A. netstat</div>
+          <div class="answer" data-answer="B" onclick="selectAnswer(this, 'B', 10)">B. syslog</div>
+          <div class="answer" data-answer="C" onclick="selectAnswer(this, 'C', 10)">C. watch</div>
+          <div class="answer" data-answer="D" onclick="selectAnswer(this, 'D', 10)">D. grub</div>
+        
+        <button id="check-btn" onclick="showResult()">Sprawdź odpowiedzi</button>
+        <button id="reset-btn" onclick="resetQuiz()">Resetuj</button>
+        <div id="result"></div>
+      </div>
+    </main>
+  </body>
+</html>
