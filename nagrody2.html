@@ -8,45 +8,42 @@
     <!-- pliki css -->
     <link rel="stylesheet" href="css-files/general.css">
     <link rel="stylesheet" href="css-files/topbar.css">
-    <link rel="stylesheet" href="css-files/rebusy.css">
+    <link rel="stylesheet" href="css-files/nagrody.css">
     <!-- czcionki -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- !scr -->
-    <script src="js-files/rebusy.js"></script>
     <div class="topbar">
       <a href="index.html"><div class="sections">STRONA GŁÓWNA</div></a>
       <a href="formularz.html"><div class="sections">FORMULARZ</div></a>
       <a href="quiz.html"><div class="sections">QUIZ KONKURSOWY</div></a>
-      <a href="rebusy.html"><div class="sections aktualna">REBUSY</div></a>
-      <a href="nagrody.html"><div class="sections">NAGRODY</div></a>
+      <a href="rebusy.html"><div class="sections">REBUSY</div></a>
+      <a href="nagrody.html"><div class="sections aktualna">NAGRODY</div></a>
       <a href="wklad.html"><div class="sections">WKŁAD</div></a>
     </div>
     <main>
-      <!-- <a href="quiz.html"><div class="strzalki strzalka-lew">
+      <a href="nagrody.html"><div class="strzalki strzalka-lew">
         <img class="str-img" src="zdjecia/strzalka-w-lewo.png">
-      </div></a> -->
-      <a href="rebusy2.html"><div class="strzalki strzalka-praw">
-        <img class="str-img" src="zdjecia/strzalka-w-prawo.png">
       </div></a>
-      <div id="all">
-        <!-- !zdj -->
-        <img src="rebusy/zdjecia/1.png">
-        <div style="display: flex; flex-direction: column; align-items: center;">
-          <span id="wskazowka"></span>
-          <div style="margin: 5px 0; text-align: center;">
-            <label for="inputText">Wpisz odpowiedź: </label>
-            <input type="text" id="inputText">
-            <div id="result" style="margin-top: 5px; font-weight: bold;"></div>
-          </div>
-          <div>
-            <button onclick="checkInput()">Sprawdź</button>
-            <button onclick="showHints()">Wskazówka</button>
-          </div>
+      <div class="miejsca">
+        <div class="sekcje">
+          <h2>Dyplom za 1 miejsce</h2>
+          <img class="puchar" src="zdjecia/1miejsce-dyplom.png" alt="zdjęcie dyplomu za 1 miejsce">
         </div>
+        <div class="sekcje">
+          <h2>Dyplom za 2 miejsce</h2>
+          <img class="puchar" src="zdjecia/2miejsce-dyplom.png" alt="zdjęcie dyplomu za 2 miejsce">
+        </div>
+        <div class="sekcje">
+          <h2>Dyplom za 3 miejsce</h2>
+          <img class="puchar" src="zdjecia/3miejsce-dyplom.png" alt="zdjęcie dyplomu za 3 miejsce">
+        </div>
+      </div>
+      <div class="sekcje">
+        <h2>Dyplom za wyróżnienie</h2>
+        <img class="puchar" src="zdjecia/wyroznienie-dyplom.png" alt="zdjęcie dyplomu za wyróżnienie">
       </div>
     </main>
   </body>

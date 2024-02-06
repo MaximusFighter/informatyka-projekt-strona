@@ -4,4 +4,67 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
+main > img {
+  margin-bottom: 10px;
+}
+#all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px;
+}
+#all > img {
+  width: 500px;
+}
+button {
+  width: 125px;
+  margin: 3px 0;
+  background-color: #3a5a40;
+  color: #faf7ef;
+  border: none;
+  padding: 10px 5px;
+  border-radius: 6px;
+  transition: background-color 0.15s;
+}
+button:hover {
+  background-color: #588157;
+}
+button:active {
+  background-color: #7aa37a;
+}
+.strzalki {
+  width: 75px;
+  height: 75px;
+  position: fixed;
+  z-index: 3;
+  top: 120px;
+  background-color: #3a5a40;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 6px;
+  transition: background-color 0.15s;
+  cursor: pointer;
+}
+.strzalki:hover {
+  background-color: #588157;
+}
+.strzalki:active {
+  background-color: #7aa37a;
+}
+.strzalka-praw {
+  right: 20px;
+}
+.strzalka-lew {
+  left: 20px;
+}
+.str-img {
+  width: 60px;
+}
+

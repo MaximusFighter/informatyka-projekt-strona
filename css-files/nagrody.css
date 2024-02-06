@@ -21,3 +21,58 @@ main {
   align-items: center;
   margin: 0 10px;
 }
+.strzalki {
+  width: 75px;
+  height: 75px;
+  position: fixed;
+  z-index: 3;
+  top: 120px;
+  background-color: #3a5a40;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 6px;
+  transition: background-color 0.15s;
+  cursor: pointer;
+}
+.strzalki:hover {
+  background-color: #588157;
+}
+.strzalki:active {
+  background-color: #7aa37a;
+}
+.strzalka-praw {
+  right: 20px;
+}
+.strzalka-lew {
+  left: 20px;
+}
+.strzalki {
+  width: 75px;
+  height: 75px;
+  position: fixed;
+  z-index: 3;
+  top: 120px;
+  background-color: #3a5a40;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 6px;
+  transition: background-color 0.15s;
+  cursor: pointer;
+}
+.strzalki:hover {
+  background-color: #588157;
+}
+.strzalki:active {
+  background-color: #7aa37a;
+}
+.strzalka-praw {
+  right: 20px;
+}
+.strzalka-lew {
+  left: 20px;
+}
+.str-img {
+  width: 60px;
+}
